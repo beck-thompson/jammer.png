@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Open new issue on the public repository
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_MIRROR_TOKEN }}
+        GH_TOKEN: ${{ secrets.MIRROR_BOT_TOKEN }}
         THIS_REPO: ${{ github.repository }}
         THIS_ISSUE: ${{ github.event.issue.number }}
         THIS_ISSUE_TITLE: ${{ github.event.issue.title }}
